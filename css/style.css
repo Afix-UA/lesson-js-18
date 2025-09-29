@@ -1,0 +1,55 @@
+:root {
+	--mainColor: #00c6d7;
+	--bgColor: #231f20;
+	--letterColor: #ffc907;
+}
+
+body {
+	background-color: var(--bgColor);
+	color: var(--mainColor);
+	font-size: 24px;
+}
+
+.lesson {
+}
+
+.lesson__container {
+	padding-block: 40px;
+	padding-inline: 15px;
+	margin: 0 auto;
+	max-width: 1920px;
+	display: grid;
+	gap: 20px;
+}
+
+.lesson__title {
+	font-size: 50px;
+}
+
+.lesson__nav {
+	color: var(--letterColor);
+	display: grid;
+	gap: 30px;
+	padding-inline: 10px;
+}
+
+.lesson__item {
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px 20px;
+	border: 1px solid var(--mainColor);
+	transition: box-shadow 0.3s, transform 0.3s;
+	box-shadow: 3px 5px 5px var(--mainColor);
+}
+
+.lesson__link {
+	position: relative;
+	flex-basis: 10%;
+}
+
+.lesson__item:hover {
+	transform: translate(3px, 3px);
+	box-shadow: 2px 2px 2px var(--mainColor);
+}
